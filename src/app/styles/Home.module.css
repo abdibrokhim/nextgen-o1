@@ -1,0 +1,29 @@
+/* styles/Home.module.css */
+
+.container {
+    padding: 2rem;
+    position: relative;
+  }
+  
+  #overlay button {
+    padding: 8px 12px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #overlay button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+  
+  .reply-text {
+    display: block;
+    max-width: 100%; /* Ensure it doesn't exceed the wrapper */
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    overflow: hidden; /* Hide the overflow */
+    text-overflow: ellipsis; /* Show '...' for overflowing text */
+  }
+  
