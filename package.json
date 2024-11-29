@@ -17,6 +17,7 @@
     "@langchain/community": "^0.2.25",
     "@langchain/openai": "^0.2.11",
     "@langchain/pinecone": "^0.0.8",
+    "@next/swc-darwin-arm64": "^15.0.3",
     "@pinecone-database/pinecone": "^3.0.3",
     "axios": "^1.7.3",
     "cheerio": "^1.0.0",

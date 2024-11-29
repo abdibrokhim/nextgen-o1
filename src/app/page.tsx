@@ -26,8 +26,7 @@ Future research in DL may focus on enhancing model interpretability, incorporati
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [validated, setValidated] = useState(true);
   const [fileName, setFileName] = useState('');
-  const [indexName, setIndexName] = useState('f77961ee-af74-4c9e-9b37-05ef43c0ca71');
-  // const [indexName, setIndexName] = useState('');
+  const [indexName, setIndexName] = useState('');
   const [showSetUpWindow, setShowSetUpWindow] = useState(false);
   const [isSavingSetUp, setIsSavingSetUp] = useState(false);
   const [systemPrompt, setSystemPrompt] = useState('');
@@ -342,7 +341,7 @@ Future research in DL may focus on enhancing model interpretability, incorporati
   );
 
   // SetUpWindow Component
-const SetUpWindow = ({ onClose, onSave, systemPrompt, setSystemPrompt, isMemoryOn, setIsMemoryOn }: any) => {
+const SetUpWindow = ({ onClose, onSave, systemPrompt, setSystemPrompt, isMemoryOn, setIsMemoryOn }: {onClose: () => void, onSave: () => void, systemPrompt: string, setSystemPrompt: (s: string) => void, isMemoryOn: boolean, setIsMemoryOn: (m: boolean) => void}) => {
   return (
       <div className="relative w-[800px] flex flex-col gap-4 p-4">
           {/* Close Button */}
@@ -417,6 +416,10 @@ const getSystemPrompt = async () => {
   return s;
 };
 
+const handleCloseSetUpWindow = () => {
+  setShowSetUpWindow(false);
+};
+
   return (
     <main className="flex min-h-screen flex-col justify-between">
       {notification && (
@@ -445,45 +448,45 @@ const getSystemPrompt = async () => {
         />
       </div>
       <div className='flex flex-col gap-4 fixed top-4 left-4'>
-      <div className="relative flex items-center group">
-        <button
-          onClick={startOver}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
-          >
-          <FontAwesomeIcon icon={faRotateRight} />
-        </button>
-        <span className="absolute w-[80px] text-xs left-full ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:right-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-r-[#eeeeee]">
-          Start over
-        </span>
-      </div>
-      <div className="relative flex items-center group">
-        <button
-          onClick={cleanChat}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
-          >
-          <FontAwesomeIcon icon={faShower} />
-        </button>
-        <span className="absolute w-[80px] text-xs left-full ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:right-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-r-[#eeeeee]">
-          Clear chat
-        </span>
-      </div>
-      <div className="relative flex items-center group">
-        <button
-          onClick={setUp}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
-          >
-          <FontAwesomeIcon icon={faGear} />
-        </button>
-        <span className="absolute w-[80px] text-xs left-full ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:right-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-r-[#eeeeee]">
-          Set up
-        </span>
-      </div>
+        <div className="relative flex items-center group">
+          <button
+            onClick={startOver}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
+            >
+            <FontAwesomeIcon icon={faRotateRight} />
+          </button>
+          <span className="absolute w-[80px] text-xs left-full ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:right-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-r-[#eeeeee]">
+            Start over
+          </span>
+        </div>
+        <div className="relative flex items-center group">
+          <button
+            onClick={cleanChat}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
+            >
+            <FontAwesomeIcon icon={faShower} />
+          </button>
+          <span className="absolute w-[80px] text-xs left-full ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:right-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-r-[#eeeeee]">
+            Clear chat
+          </span>
+        </div>
+        <div className="relative flex items-center group">
+          <button
+            onClick={setUp}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
+            >
+            <FontAwesomeIcon icon={faGear} />
+          </button>
+          <span className="absolute w-[80px] text-xs left-full ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:right-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-r-[#eeeeee]">
+            Set up
+          </span>
+        </div>
       </div>
       {showSetUpWindow && (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-40">
         <div className="bg-[#2e2e2e] rounded-lg shadow-lg max-w-[800px] max-h-[600px] p-2">
             <SetUpWindow 
-                onClose={() => setShowSetUpWindow(!showSetUpWindow)}
+                onClose={handleCloseSetUpWindow}
                 onSave={() => setSystemPromptToLocalStorage()}
                 systemPrompt={systemPrompt}
                 setSystemPrompt={setSystemPrompt}
@@ -494,39 +497,39 @@ const getSystemPrompt = async () => {
     </div>
 )}
       <div className='flex flex-col gap-4 fixed top-4 right-4'>
-      <div className="relative flex items-center group">
-        <button
-          onClick={() => window.open('https://buymeacoffee.com/abdibrokhim', '_blank')}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
-          >
-          <FontAwesomeIcon icon={faCoffee} />
-        </button>
-        <span className="absolute w-[80px] text-xs right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:left-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-l-[#eeeeee]">
-          Support
-        </span>
-      </div>
-      <div className="relative flex items-center group">
-        <button
-          onClick={() => window.open('https://github.com/abdibrokhim/', '_blank')}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
-          >
-          <FontAwesomeIcon icon={faGithub} />
-        </button>
-        <span className="absolute w-[100px] text-xs right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:left-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-l-[#eeeeee]">
-          Open Source
-        </span>
-      </div>
-      <div className="relative flex items-center group">
-        <button
-          onClick={() => window.open('https://linkedin.com/in/abdibrokhim', '_blank')}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
-          >
-          <FontAwesomeIcon icon={faLinkedin} />
-        </button>
-                <span className="absolute w-[80px] text-xs right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:left-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-l-[#eeeeee]">
-                LinkedIn
-              </span>
-            </div>
+        <div className="relative flex items-center group">
+          <button
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
+            onClick={() => window.open('https://patreon.com/abdibrokhim', '_blank')}
+            >
+            <FontAwesomeIcon icon={faCoffee} />
+          </button>
+          <span className="absolute w-[80px] text-xs right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:left-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-l-[#eeeeee]">
+            Support
+          </span>
+        </div>
+        <div className="relative flex items-center group">
+          <button
+            onClick={() => window.open('https://github.com/abdibrokhim/', '_blank')}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
+            >
+            <FontAwesomeIcon icon={faGithub} />
+          </button>
+          <span className="absolute w-[100px] text-xs right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:left-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-l-[#eeeeee]">
+            Open Source
+          </span>
+        </div>
+        <div className="relative flex items-center group">
+          <button
+            onClick={() => window.open('https://linkedin.com/in/abdibrokhim', '_blank')}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black shadow cursor-pointer "
+            >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </button>
+            <span className="absolute w-[80px] text-xs right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md bg-[#eeeeee] text-black px-2 py-1 before:content-[''] before:absolute before:left-full before:top-1/2 before:transform before:-translate-y-1/2 before:border-4 before:border-transparent before:border-l-[#eeeeee]">
+            LinkedIn
+          </span>
+        </div>
       </div>
       <div className="w-full lg:max-w-5xl px-16 lg:px-0 mx-auto">
         <div className="mb-32 w-full lg:text-left overflow-auto">
