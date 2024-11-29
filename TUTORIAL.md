@@ -1665,7 +1665,7 @@ Open http://localhost:3000 in your browser to see the application running.
 
 You should see something similar to this:
 
-![NextGen-o1]()
+![NextGen-o1](public/sss/chat-ui.png)
 
 #### Backend
 
@@ -1691,13 +1691,9 @@ Here's a brief tutorial on:
 - [How to create account on Clerk and setup new project](https://medium.com/@abdibrokhim/how-to-create-account-on-clerk-and-setup-a-new-project-532be3545642)
 - [How to setup Clerk Auth on your application](https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md#clerk-auth-1)
 
-Deploy the application to Vercel.
+Deploy the application to Vercel. Here's a brief tutorial: [How to Deploy Apps to Vercel with ease](https://medium.com/@abdibrokhim/how-to-deploy-apps-to-vercel-with-ease-93fa0d0bb687)
 
-Here's a brief tutorial: [How to Deploy Apps to Vercel with ease](https://medium.com/@abdibrokhim/how-to-deploy-apps-to-vercel-with-ease-93fa0d0bb687)
-
-Hype up your application by sharing it on Product Hunt and X.
-
-Here's a brief tutorial: [How to hype up the projects on socials like Product Hunt and X](https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md#hype-it-up)
+Hype up your application by sharing it on Product Hunt and X. Here's a brief tutorial: [How to hype up the projects on socials like Product Hunt and X](https://github.com/abdibrokhim/ai-coding-interviewer/blob/main/TUTORIAL.md#hype-it-up)
 
 
 ## Conclusion
@@ -1739,16 +1735,16 @@ on Dev Community:
 
 ### Try what you have built so far:
 
-* [PrepAlly AI Coding Interview Prep](https://github.com/abdibrokhim/ai-coding-interviewer), it helps candidates prepare for coding interviews.
-* [HumanAIze AI text tool](https://humanaize.vercel.app/), it's absolutely FREE! 🎉 and The smartest AI humanizer.
-* [AI Sticker Maker Platform](https://ai-sticker-maker.vercel.app/) on [HuggingFace Spaces](https://huggingface.co/spaces/AI-ML-API-tutorials/ai-sticker-maker) 🚀. You can print them and make your life funnier.
-* [Chrome Extension](https://github.com/TechWithAbee/Building-a-Chrome-Extension-from-Scratch-with-AI-ML-API-Deepgram-Aura-and-IndexDB-Integration) to Read Aloud the text on the webpage.
-* Not a subscriber? Download Loom Videos for free using [lovido.lol](https://lovido.lol/). [Open Source](https://github.com/abdibrokhim/loom-dl-web/), put a star on it! ⭐️
+* [PrepAlly AI Coding Interview Prep](https://github.com/abdibrokhim/ai-coding-interviewer), it helps candidates prepare for coding interviews. Put a star on it! ⭐️
+* [HumanAIze AI text tool](https://humanaize.vercel.app/), it's absolutely FREE! 🎉 and The smartest AI humanizer. Put a star on it! ⭐️
+* [AI Sticker Maker Platform](https://ai-sticker-maker.vercel.app/) on [HuggingFace Spaces](https://huggingface.co/spaces/AI-ML-API-tutorials/ai-sticker-maker) 🚀. You can print them and make your life funnier. Put a star on it! ⭐️
+* [Chrome Extension](https://github.com/TechWithAbee/Building-a-Chrome-Extension-from-Scratch-with-AI-ML-API-Deepgram-Aura-and-IndexDB-Integration) to Read Aloud the text on the webpage. Put a star on it! ⭐️
+* Not a subscriber? Download Loom Videos for free using [lovido.lol](https://lovido.lol/). [Open Source](https://github.com/abdibrokhim/loom-dl-web/). Put a star on it! ⭐️
 
 
 ## Bonus
 
-*[Uncensored]*: Founders video; Y Combinator Winter 2025 batch [be a Patron](https://www.patreon.com/collection/861737)
+[Uncensored]: Founders video. Y Combinator Winter 2025 batch. [Watch it here](https://www.patreon.com/collection/861737). Startup [PaperAI](https://paperai.pro).
 
 if you need someone to guide you through the challenges? i’m here to help; [Book a Call](https://topmate.io/abdibrokhim/1291447)
 
@@ -1765,7 +1761,9 @@ All tutorials available here:
 - Medium: https://medium.com/@abdibrokhim 
 - Dev: https://dev.to/abdibrokhim
 
-And “ say hi! ” Open Community on socials:
+Preparing smth... CRAZY 🤯
+
+Say “ hi! ” Open Community on socials:
 - Website: https://theopencommunity.co 
 - LinkedIn: https://linkedin.com/company/opencommunity 
 - X: https://x.com/xopencommunity 
@@ -1775,4 +1773,6 @@ And “ say hi! ” Open Community on socials:
 
 Learn whats comin' up next, here [imcook.in](https://imcook.in) smth cool.
 
-[Edit this page on GitHub]()
+Leave your reactions, and comments on [LinkedIn post]()
+
+[Edit this page on GitHub](https://github.com/abdibrokhim/nextgen-o1/blob/main/TUTORIAL.md)
