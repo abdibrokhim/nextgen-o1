@@ -2,11 +2,44 @@
 
 <details>
 <summary>⬇️ Table of Contents ⬇️</summary>
+
+- [Introduction](#introduction)
+  - [AI/ML API](#aiml-api)
+  - [Pinecone](#pinecone)
+  - [Next.js](#nextjs)
+  - [Tailwind CSS](#tailwind-css)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [Create a New Next.js Project](#create-a-new-nextjs-project)
+  - [API Routes: `Read Aloud` Feature](#api-routes-read-aloud-feature)
+  - [Backend](#backend)
+    - [IndexedDB: Temporary Save Audio File](#indexeddb-temporary-save-audio-file)
+    - [Pinecone](#pinecone)
+    - [Reply Functionality](#reply-functionality)
+    - [Server: with ExpressJS](#server-with-expressjs)
+  - [Nextgen o1 Interface](#nextgen-o1-interface)
+    - [Notification](#notification)
+    - [FontAwesome Icons](#fontawesome-icons)
+    - [Main Playground](#main-playground)
+    - [App Info](#app-info)
+    - [Environment Variables](#environment-variables)
+  - [Run Locally](#run-locally)
+    - [Start the Client](#start-the-client)
+    - [Start the Server](#start-the-server)
+  - [Testing](#testing)
+- [Further Improvements](#further-improvements)
+- [Conclusion](#conclusion)
+  - [Other Interesting Tutorials](#other-interesting-tutorials)
+  - [Try what you have built so far](#try-what-you-have-built-so-far)
+- [Bonus](#bonus)
+
+
+
 </details>
 
 ## Introduction
 
-In this tutorial, we will build Chat With PDF platform from very scratch. 
+In this tutorial, we will build Chat With PDF platform from very scratch.
 
 The one that on the right side of the screenshot below: 😂
 
@@ -72,6 +105,8 @@ Before we get started, make sure you have the following installed on your machin
 * [Pinecone API Key](https://www.pinecone.io/). Here's a tutorial on [How to get API Key from Pinecone](https://dev.to/abdibrokhim/how-to-get-api-key-from-pinecone-4dlh)
 
 ## Getting Started
+
+`Note:` Tutorial could be a little challenging. If you have any questions, feel free to [Book a Call](https://topmate.io/abdibrokhim/). I would love to help you out.
 
 ### Create a New Next.js Project
 
@@ -703,6 +738,7 @@ app.listen(PORT, () => {
 });
 ```
 
+If you have any questions, feel free to [Book a Call](https://topmate.io/abdibrokhim/). I would love to help you out.
 
 ### Nextgen o1 Interface
 
@@ -1463,6 +1499,8 @@ const createIndex = async () => {
 
 ![Pinecone vector db](public/sss/vector-db.png)
 
+If you have any questions, feel free to [Book a Call](https://topmate.io/abdibrokhim/). I would love to help you out.
+
 Reply functionality:
 
 ```typescript
@@ -1653,7 +1691,7 @@ NEXT_PUBLIC_AIML_API_KEY=...
 
 ### Run Locally
 
-#### Frontend
+#### Start the Client
 
 Now, you can run the application locally with the following command:
 
@@ -1667,7 +1705,7 @@ You should see something similar to this:
 
 ![NextGen-o1](public/sss/chat-ui.png)
 
-#### Backend
+#### Start the Server
 
 ```bash
 cd backend
@@ -1700,7 +1738,7 @@ Hype up your application by sharing it on Product Hunt and X. Here's a brief tut
 
 In this tutorial we learned to build some stuff using AI.
 
-I hope you enjoyed building this project and learned something new. If you have any questions or feedback, feel free to [message me topmate.io/abdibrokhim](https://topmate.io/abdibrokhim/1291434/pay). I would love to hear from you. 🫠
+I hope you enjoyed building this project and learned something new. If you have any questions or feedback, feel free to [Book a Call](https://topmate.io/abdibrokhim). I would love to help you out.
 
 All the code for this project is available on GitHub. It's Open Source 🌟. [NextGen o1: Chat With PDF](https://github.com/abdibrokhim/nextgen-o1).
 
@@ -1745,6 +1783,8 @@ on Dev Community:
 ## Bonus
 
 [Uncensored]: Founders video. Y Combinator Winter 2025 batch. [Watch it here](https://www.patreon.com/collection/861737). Startup [PaperAI](https://paperai.pro).
+
+World’s 1st AI startup studio album. 100% AI generated music. [Listen here](https://www.patreon.com/collection/897243).
 
 if you need someone to guide you through the challenges? i’m here to help; [Book a Call](https://topmate.io/abdibrokhim/1291447)
 
