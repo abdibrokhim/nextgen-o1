@@ -8,7 +8,11 @@
 
 In this tutorial, we will build Chat With PDF platform from very scratch. 
 
-The functionality of the platform is really simple. User uploads a PDF file and the platform extracts the text from the whole PDF document and splits it into smaller chunks. Then, all the chunks are indexed in Pinecone, a vector database. Now the user can ask interesting questions. It's very useful for students who want to quickly find the answer to a question in a large PDF document. Kinda preparing for exams or just learning new stuff.
+The one that on the right side of the screenshot below: 😂
+
+![NextGen o1](public/sss/nextgeno1.png)
+
+`TLDR:` The functionality of the platform is really simple. User uploads a PDF file and the platform extracts the text from the whole PDF document and splits it into smaller chunks. Then, all the chunks are indexed in Pinecone, a vector database. Now the user can ask interesting questions. It's very useful for students who want to quickly find the answer to a question in a large PDF document. Kinda preparing for exams or just learning new stuff.
 
 Features:
 - upload files and ask questions, advanced data analysis
@@ -24,6 +28,8 @@ So, let's get started! 🚀
 ### AI/ML API
 
 AI/ML API is a game-changing platform for developers and SaaS entrepreneurs looking to integrate cutting-edge AI capabilities into their products. It offers a single point of access to over 200 state-of-the-art AI models, covering everything from NLP to computer vision.
+
+![AI/ML API](public/sss/aimlapi.png)
 
 Key Features for Developers:
 
@@ -1748,7 +1754,7 @@ if you need someone to guide you through the challenges? i’m here to help; [Bo
 
 Tutorial written by [Ibrohim Abdivokhidov](https://www.linkedin.com/in/abdibrokhim/).
 
-TLDR: a brief intro about me:
+`TLDR:` a brief intro about me:
 
 I’m the founder CEO at Open Community. We build Open Source AI-powered projects and tools for people. We also write comprehensive and step-by-step tutorials on those projects and share across socials like LinkedIn, Medium, DevCom, and our Discord community. So anyone, whether he or she is a beginner, a professional developer, or just a tech enthusiast, has a chance to learn how to build real stuff with AI.
 
