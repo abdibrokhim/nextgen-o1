@@ -1813,6 +1813,6 @@ Say “ hi! ” Open Community on socials:
 
 Learn whats comin' up next, here [imcook.in](https://imcook.in) smth cool.
 
-Leave your reactions, and comments on [LinkedIn post]()
+Leave your reactions, and comments on [LinkedIn post](https://www.linkedin.com/posts/abdibrokhim_building-chat-with-pdf-eg-nextgen-o1-activity-7268279006490185728-T1Zb)
 
 [Edit this page on GitHub](https://github.com/abdibrokhim/nextgen-o1/blob/main/TUTORIAL.md)
